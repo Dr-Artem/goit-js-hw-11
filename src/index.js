@@ -56,7 +56,7 @@ function renderPhoto(photos) {
 }
 
 function handleInput(eve) {
-	inputValue = eve.target.value.trim();
+	let inputValue = eve.target.value.trim();
 	inputValue === "" ? submitBtn.setAttribute('disabled', true) : submitBtn.removeAttribute('disabled');
 	valueHandler = inputValue
 }
