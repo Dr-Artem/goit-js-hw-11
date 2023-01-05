@@ -17,7 +17,9 @@ let valueHandler = "";
 let startPage = 1;
 const limitPerPage = 40;
 
-
+const liteBox = new simplelightbox('.gallery a', {
+    captionDelay: 250,
+});
 
 function handleSubmit(event) {
 	// valueHandler = event.target.elements['searchQuery'].value;
@@ -64,9 +66,7 @@ function renderPhoto(photos) {
 	gallery.insertAdjacentHTML("beforeend", createListOfPhotos(photos))
     // gallery.innerHTML = createListOfPhotos(photos.hits);
 
-    new simplelightbox('.gallery a', {
-        captionDelay: 250,
-    }).refresh();
+    liteBox.refresh();
 }
 
 function handleInput(eve) {
