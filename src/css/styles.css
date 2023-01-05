@@ -28,6 +28,7 @@ body {
 .gallery {
 	max-width: 1600px;
 	display: flex;
+	justify-content: center;
 	gap: 20px;
 	flex-wrap: wrap;
 	margin-bottom: 20px;
